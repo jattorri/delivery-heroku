@@ -3,13 +3,14 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static('./proyectoDelivery'));
+app.use(express.static('./dist/delivery-heroku'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'proyectoDelivery/src'}),
+    res.sendFile('index.html', {root: 'dist/delivery-heroku'}),
 );
 
 
 app.listen(process.env.PORT || 8080);
 
 console.log(`Running on port ${process.env.PORT || 8080}`)
+© 2021 GitHub, Inc.
