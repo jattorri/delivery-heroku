@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static('./proyectoDelivery'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'proyectoDelivery'}),
+    res.sendFile('index.html', {root: 'proyectoDelivery/src'}),
 );
 
 
