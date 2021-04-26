@@ -6,7 +6,9 @@ import *  as  data from 'src/assets/datos/platos.json'
   providedIn: 'root'
 }) export class DeliveryService {
 
-  disparadorDeAgregacion: EventEmitter<any> = new EventEmitter();
+  //disparadorDeAgregacion: EventEmitter<any> = new EventEmitter();
+
+  disparadorDePlato: EventEmitter<any> = new EventEmitter();
 
 
   platosFile: any = (data as any).default;
